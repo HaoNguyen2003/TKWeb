@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị Hình ảnh từ Input</title>
+</head>
+<body>
+
+    <input type="file" id="fileInput" accept="image/*">
+    <img id="previewImage" alt="Hình ảnh">
+
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function() {
+            var fileInput = this;
+            var previewImage = document.getElementById('previewImage');
+
+            // Đảm bảo có tệp được chọn
+            if (fileInput.files && fileInput.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                    // Hiển thị hình ảnh trong thẻ img
+                    previewImage.src = e.target.result;
+                };
+
+                // Đọc dữ liệu của tệp hình ảnh
+                reader.readAsDataURL(fileInput.files[0]);
+            }
+        });
+    </script>
+
+</body>
+</html>

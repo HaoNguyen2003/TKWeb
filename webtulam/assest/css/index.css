@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family:'Courier New', Courier, monospace;
+    scroll-behavior: smooth;
+
+}
+/*phần giống nhau*/
+.icon{
+    position: absolute;
+    margin: 7px;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 2px;
+    cursor: pointer;
+    opacity: 0.5;
+    font-weight: bold;
+}
+.icon:hover{
+    opacity: 0.8;
+}
+
+/*end*/
+#header{
+    height: 52px;
+    background-color:rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.logo-brand{
+    position: absolute;
+    line-height: 52px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+.logo-brand .icon-brand{
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.5;
+}
+.icon-brand:hover{
+    opacity: 0.8;
+}
+.nav{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    line-height: 52px;
+    margin-top: 3px;
+    margin-right: 25px;
+    margin-left: 10px;
+}
+.nav > li{
+    display: inline-block;
+    margin: 0 5px;
+    color: #fff;
+    font-size: 20px;
+
+}
+.search{
+    position: absolute;
+    line-height: 52px;
+    background-color: white;
+    padding: 0 10px;
+    border: 1px solid black;
+    height: 42px;
+    text-align: justify;
+}
+.search .ti-search{
+    line-height: 42px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.search .txt-search{
+    font-family: 'Courier New', Courier, monospace;
+    line-height:42px;
+    border: none;
+    font-size: 16px;
+    font-weight: bolder;
+    height: 24px;
+}
+

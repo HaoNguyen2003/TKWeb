@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 40px;
+        }
+        .box{
+            width: 20vw;
+            height: 100px;
+            background-color:red;
+        }
+        h1{
+            font-size: 2em;
+        }
+        a::after{
+            content: "("attr(href)")";
+        }
+        .box::after{
+            content: attr(data-title);
+        }
+    </style>
+</head>
+<body>
+    <div class="box" data-title="day la mau do">
+        <h6>Day la to giay </h6>
+    </div>
+    <div style="font-size: 30px;">
+         <h1>Ngyen tien hao</h1>
+    </div>
+    <div class="font-size: 24px">
+        <a href="nguyentienhao.com.vn">1234</a>
+    </div>
+     
+   
+</body>
+</html>

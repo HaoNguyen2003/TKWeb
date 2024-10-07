@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 3500px;
+    background-color: white;
+  }
+  
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+  #header-search {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: #bababa;
+  }
+  .logo-homepage a img {
+    position: absolute;
+    width: 146px;
+    height: 100px;
+    left: 66px;
+    top: 0px;
+  }
+  .search-bar input {
+    position: absolute;
+    width: 600px;
+    height: 38px;
+    left: 286px;
+    top: 31px;
+    border: 3px solid black;
+    font-weight: bold;
+
+    background: #fefefe;
+  }
+  .search-button button {
+    position: absolute;
+    width: 112px;
+    height: 38px;
+    left: 890px;
+    top: 31px;
+    color: #e3e3e3;
+    background: #000000;
+    border:3px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .search-button button:hover {
+    background: #0651a7;
+  }
+  .search-logo img {
+    position: absolute;
+    width: 37px;
+    height: 74px;
+    left: 849px;
+    top: 13px;
+  }
+  .search-infomation a img {
+    position: absolute;
+    width: 84px;
+    height: 74px;
+    left: 1044px;
+    top: 13px;
+    
+  }
+  .search-infomation p {
+    /* Tài khoản */
+  
+    position: absolute;
+    width: 59px;
+    height: 15px;
+    left: 1113px;
+    top: 42px;
+  
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.5px;
+    line-height: 15px;
+    /* identical to box height */
+  
+    color: #fefefe;
+  }
+  
+  .search-cart a img {
+    position: absolute;
+    width: 117px;
+    height: 100px;
+    left: 1190px;
+    top: 0px;
+  }
+  .search-cart p {
+    position: absolute;
+    width: 55px;
+    height: 15px;
+    left: 1280px;
+    top: 42px;
+  
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.5px;
+    line-height: 15px;
+    /* identical to box height */
+  
+    color: #fefefe;
+  }
+  #nav-menu {
+    width: 100%;
+    height: 64px;
+  
+    position: flex;
+    background: #fffafa;
+  }
+  #nav-menu ul li {
+    flex-flow: row nowrap;
+    align-self: center;
+    width: 6%;
+    float: left;
+    margin-left: 120px ;
+    list-style: none;
+    text-align: center;
+    
+  }
+  #nav-menu ul li a {
+    text-decoration: none;
+  
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 50px;
+    font-weight: bolder;
+    /* identical to box height */
+  
+    color: #000000;
+  }
+  #nav-menu ul li:hover a {
+    color: #00b8f1;
+    text-decoration: underline;
+  }
+  .tieu-de-1{
+    background-color: rgb(206, 205, 205);
+    width: 100%;
+    height: 60px;
+  }
+  .sale{
+    text-align: center;
+    font-weight: bolder ;
+    font-size: 22px;
+    color: red;
+  }
+  .all{
+    text-align: center;
+    margin-top: 7px;
+  }
+  .hinh-1{
+    width: 220px;
+    
+  }
+  .banner-1 img{
+    margin-left: 85px;
+    margin-top: 30px;
+    width: 1350px;
+  }
+  .chu-xanh{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 17px;
+    color: green;
+  }
+  .chu-to{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .chu-phu{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .chu-phu-1{
+    text-align: center;
+  }
+  #nut-join{
+    margin-left: 700px;
+    margin-top: 30px;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #000000;
+    color: white;
+  }
+  .khung-hinh{
+    width: 88%;
+    margin: auto;
+    
+    height: 558px;
+  }
+  .hinh-liver img{
+    height: 500px;
+    float: left;
+    width: 600px;
+    border-radius: 5px;
+    margin-top: 8px;
+  }
+  .hinh-den img{
+    height: 500px;
+    float: right;
+    width: 600px;
+    border-radius: 5px;
+    margin-top: 8px;
+  }
+  .khung-2{
+    width: 88%;
+    margin: auto;
+   
+    height: 730px;
+  }
+  .banner-2 img{
+    height: 400px;
+    margin-top: 30px;
+    width: 1350px;
+    border: 10px;
+  }
+#nut-join-1{
+    margin-top: 30px;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #000000;
+    color: white;
+    margin-left: 46%;
+}
+section{
+    width: 88%;
+    float: left;
+   
+  }
+  .hinh-giay-1 img{
+    height: 300px;
+    width: 250px;
+    float: left;
+  } 
+    .hinh-giay-1{
+    margin-left: 119px;
+    margin-top: 20px;
+    height: 321px;  
+}
+.giay-1{
+    display: flex;
+    height: 610px;
+}
+.ki-hieu-1{
+    color: orange;
+    font-weight: 600;
+    font-size: 17px;
+  }
+  .ten-sp-1{
+    font-size: 20px;
+  }
+  .loai-sp-1{
+    color: rgb(190, 188, 188);
+    font-weight: 300;
+  }
+  .gia-sp-1{
+    font-weight: bold;
+    color: red;
+    text-decoration: underline;
+  }
+  .spacing-1{
+    line-height: 30px;
+  }
+  .you h2{
+    margin-left: 119px;
+    margin-top: 20px;
+  }
+  footer{
+    position: relative;
+    width: 1518px;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .container .noi-dung{
+    margin-right: 10px;
+}
+footer  .container .noi-dung.about{
+    width:40%;
+    
+}
+footer .container .noi-dung.about h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+footer .container .noi-dung.about h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer .container .noi-dung.about p{
+    color: #999;
+}
+.links h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.links h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.links{
+   position: relative;
+   width: 25%;
+}
+.links ul li{
+    list-style: none;
+}
+.links ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.links ul li a:hover{
+    color: #fff;
+}
+.contact h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.contact h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: #999;
+}
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}
+.nut{
+  width: 100px;
+  margin-top: 57px;
+  margin-left: 57px;
+  height: 35px;
+  text-align: center;
+  border: 2px solid rgb(190, 189, 189);
+  border-radius: 6px;
+  padding: 5px;
+}

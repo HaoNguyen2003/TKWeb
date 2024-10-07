@@ -1,0 +1,69 @@
+@media(max-width: 770px) {
+  .container{
+      font-family: 'Quicksand', sans-serif!important;
+      min-width: 500px;
+  }
+  .hinh-1 img{
+    max-width: 250%;
+  }
+  .hinh-giay-1{
+    max-width: 100%;
+  }
+  .hinh-liver{
+    max-width: 100%;
+    height: 10px;
+  }
+  .hinh-den{
+    max-width: 100%;
+    margin-top: 0px;
+  }
+  #nut-join{
+    margin-top: 30px;
+    max-width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #000000;
+    color: white;
+  }
+  footer{
+    max-width: 100%;
+  }
+  section{
+    max-width: 100%;
+    margin: auto;
+    
+    
+  }
+  .khung-2 img{
+    max-width: 100%;
+  }
+  .giay-1{
+    max-width: 100%;
+  }
+  .giay-1 img{
+    max-width: 200%;
+    
+    float: left;
+  }
+  header{
+    position: relative;
+    max-width: 100%;
+  }
+  header img{
+    max-width: 100%;
+  }
+  #nav-menu{
+    max-width: 100%;
+    text-align: center;
+    float: left;
+  }
+  .search-bar input{
+    width: 50px;
+  }
+  header{
+    display: none;
+}
+}

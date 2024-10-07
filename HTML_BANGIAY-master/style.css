@@ -1,0 +1,170 @@
+.container{
+    width: 100%;
+    height: auto;
+}
+.menu{
+    width: 100%;
+    height: 120px;
+    background-color: #ee4d2d;
+}
+.up{
+    width: 100%;
+   
+}
+.up ul{
+    list-style: none;
+    margin: 0;
+    
+}
+.up ul li{
+    float: right;
+    margin:0 6px;
+}
+.up ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.up ul li a:hover{
+    color: rgb(194, 173, 173);
+}
+.up ul .header-dangky{
+    border-left: white solid 2px;
+}
+
+.down{
+    height: 50px;
+    width: 80%;
+    margin-top: 20px;margin-right: 50px;
+    padding: 10px;
+}
+.search{
+    height: 35px;width: 600px;
+    background-color: white;
+    margin-left: 0px;
+    
+    margin-top: 40px;
+}
+.search input{
+    width: 555px;height: 30px;
+    margin: 0px;
+
+}
+.search button{
+    height: 35px;width: 30px;
+}
+
+/*phần cuối*/
+
+
+footer{
+    position: relative;
+    width: 1520px;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .container .noi-dung{
+    margin-right: 10px;
+}
+footer  .container .noi-dung.about{
+    width:40%;
+    
+}
+footer .container .noi-dung.about h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+footer .container .noi-dung.about h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer .container .noi-dung.about p{
+    color: #999;
+}
+.links h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.links h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.links{
+   position: relative;
+   width: 25%;
+}
+.links ul li{
+    list-style: none;
+}
+.links ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.links ul li a:hover{
+    color: #fff;
+}
+.contact h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.contact h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: #999;
+}
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}

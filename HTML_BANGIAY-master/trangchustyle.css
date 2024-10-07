@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    min-height: 2300px;
+    background: #e3e3e3;
+  }
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+  #header-search {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: #bababa;
+  }
+  .logo-homepage a img {
+    position: absolute;
+    width: 146px;
+    height: 100px;
+    left: 66px;
+    top: 0px;
+  }
+  .search-bar input {
+    position: absolute;
+    width: 600px;
+    height: 38px;
+    left: 286px;
+    top: 31px;
+    border: 3px solid black;
+    font-weight: bold;
+
+    background: #fefefe;
+  }
+  .search-button button {
+    position: absolute;
+    width: 112px;
+    height: 38px;
+    left: 890px;
+    top: 31px;
+    color: #e3e3e3;
+    background: #000000;
+    border:3px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .search-button button:hover {
+    background: #0651a7;
+  }
+  .search-logo img {
+    position: absolute;
+    width: 37px;
+    height: 74px;
+    left: 849px;
+    top: 13px;
+  }
+  .search-infomation a img {
+    position: absolute;
+    width: 84px;
+    height: 74px;
+    left: 1044px;
+    top: 13px;
+    
+  }
+  .search-infomation p {
+    /* Tài khoản */
+  
+    position: absolute;
+    width: 59px;
+    height: 15px;
+    left: 1113px;
+    top: 42px;
+  
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.5px;
+    line-height: 15px;
+    /* identical to box height */
+  
+    color: #fefefe;
+  }
+  
+  .search-cart a img {
+    position: absolute;
+    width: 117px;
+    height: 100px;
+    left: 1190px;
+    top: 0px;
+  }
+  .search-cart p {
+    position: absolute;
+    width: 55px;
+    height: 15px;
+    left: 1280px;
+    top: 42px;
+  
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.5px;
+    line-height: 15px;
+    /* identical to box height */
+  
+    color: #fefefe;
+  }
+  #nav-menu {
+    width: 100%;
+    height: 50px;
+  
+    position: flex;
+    background: #fffafa;
+  }
+  #nav-menu ul li {
+    flex-flow: row nowrap;
+    align-self: center;
+    width: 6%;
+    float: left;
+    margin-left: 120px ;
+    list-style: none;
+    text-align: center;
+    
+  }
+  #nav-menu ul li a {
+    text-decoration: none;
+  
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 50px;
+    font-weight: bolder;
+    /* identical to box height */
+  
+    color: #000000;
+  }
+  #nav-menu ul li:hover a {
+    color: #00b8f1;
+    text-decoration: underline;
+  }
+  .main-banner {
+    width: 99%;
+    height: 357px;
+    margin: 0.5%;
+  }
+  .main-banner img,
+  .sub-banner1 img,
+  .sub-banner2 img {
+    width: 100%;
+    height: 100%;
+  }
+  .sub-banner1 {
+    width: 64.5%;
+    height: 227px;
+    float: left;
+    margin: 0.5%;
+  }
+  .sub-banner2 {
+    width: 33.5%;
+    height: 227px;
+    float: right;
+    margin: 0.5%;
+  }
+  .trend {
+    margin: auto;
+    clear: both;
+    width: 98%;
+    height: 229px;
+    background-color: #f8f8f8;
+    padding: 10px;
+  }
+  .products {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+  }
+  
+  .trend .product img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .trend .product p {
+    width: 120px;
+    margin-top: 10px;
+  }
+  .trend .product a {
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .trend .product a:hover {
+    color: #0075e8;
+  }
+  .trend .product a:hover img {
+    box-shadow: -3px 3px 3px gray;
+  }
+  .discount {
+    position: relative;
+    margin: 10px auto;
+    width: 98%;
+    height: 466px;
+    background-color: #f8f8f8;
+    padding: 10px;
+  }
+  .discount .products {
+  display: flex;
+    align-content: center;
+    align-items: baseline;
+    justify-content: space-around;
+    height: 300px;
+  }
+  .discount .product img {
+    width: 200px;
+    height: 200px;
+  }
+  .discount a {
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+  }
+  .discount .row {
+    text-align: center;
+    margin-top: 10px;
+    padding: 0 20px;
+  }
+  .discount .row p {
+    float: left;
+    line-height: 30px;
+  }
+  .discount svg {
+    border-radius: 5px;
+    float: right;
+  }
+  .discount .price-discount {
+    color: red;
+  }
+  .discount .price-base {
+    clear: both;
+    width: 100%;
+    text-decoration: line-through;
+  }
+  .more {
+    position: absolute;
+    bottom: 50px;
+    left: 47%;
+  }
+  .more a {
+    color: #007397;
+    font-style: italic;
+    font-weight: 400;
+    font-family: "Inter";
+  }
+ 

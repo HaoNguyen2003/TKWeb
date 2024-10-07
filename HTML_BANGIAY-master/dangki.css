@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 1575px;
+    background: #ffffff;
+  }
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+  #header-search {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: #bababa;
+  }
+  .logo-homepage a img {
+    position: absolute;
+    width: 146px;
+    height: 100px;
+    left: 66px;
+    top: 0px;
+  }
+  .search-bar input {
+    position: absolute;
+    width: 600px;
+    height: 38px;
+    left: 286px;
+    top: 31px;
+    border: 3px solid black;
+    font-weight: bold;
+
+    background: #fefefe;
+  }
+  .search-button button {
+    position: absolute;
+    width: 112px;
+    height: 38px;
+    left: 890px;
+    top: 31px;
+    color: #e3e3e3;
+    background: #000000;
+    border:3px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .search-button button:hover {
+    background: #0651a7;
+  }
+  .search-logo img {
+    position: absolute;
+    width: 37px;
+    height: 74px;
+    left: 849px;
+    top: 13px;
+  }
+  .search-infomation a img {
+    position: absolute;
+    width: 84px;
+    height: 74px;
+    left: 1044px;
+    top: 13px;
+    
+  }
+  .search-infomation p {
+    /* Tài khoản */
+  
+    position: absolute;
+    width: 59px;
+    height: 15px;
+    left: 1113px;
+    top: 42px;
+  
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.5px;
+    line-height: 15px;
+    /* identical to box height */
+  
+    color: #fefefe;
+  }
+  
+  .search-cart a img {
+    position: absolute;
+    width: 117px;
+    height: 100px;
+    left: 1190px;
+    top: 0px;
+  }
+  .search-cart p {
+    position: absolute;
+    width: 55px;
+    height: 15px;
+    left: 1280px;
+    top: 42px;
+  
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.5px;
+    line-height: 15px;
+    /* identical to box height */
+  
+    color: #fefefe;
+  }
+  #nav-menu {
+    width: 100%;
+    height: 50px;
+  
+    position: flex;
+    background: #fffafa;
+  }
+  #nav-menu ul li {
+    flex-flow: row nowrap;
+    align-self: center;
+    width: 6%;
+    float: left;
+    margin-left: 120px ;
+    list-style: none;
+    text-align: center;
+    
+  }
+  #nav-menu ul li a {
+    text-decoration: none;
+  
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 50px;
+    font-weight: bolder;
+    /* identical to box height */
+  
+    color: #000000;
+  }
+  #nav-menu ul li:hover a {
+    color: #00b8f1;
+    text-decoration: underline;
+  }
+  aside{
+      width: 260px;
+      margin: auto;
+      
+  }
+  .tieu-de-phu{
+      text-align: center;
+      margin-top: 10px;margin-right: 10px;
+      color: rgb(165, 165, 165);
+  }
+  .formdangki{
+    width: 600px;
+    margin: auto;
+    margin-top: 30px;
+  }
+#khung{
+    width: 315px; 
+    margin-left: 140px; 
+    padding: 10px;
+    border-radius: 3px;
+    border: 2px solid rgb(112, 111, 111);
+    margin-top: 28px;
+}
+#duoi-date{
+    text-align: center;
+}
+#dieu-kien{
+    margin-left: 140px;
+    margin-top: 20px;
+    font-size: 15px;
+    color:rgb(185, 185, 185)
+}
+#phu{
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+#nut-join{
+    margin-left: 140px;
+    margin-top: 20px;
+    width: 315px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+footer{
+    position: relative;
+    width: 1518px;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .container .noi-dung{
+    margin-right: 10px;
+}
+footer  .container .noi-dung.about{
+    width:40%;
+    
+}
+footer .container .noi-dung.about h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+footer .container .noi-dung.about h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer .container .noi-dung.about p{
+    color: #999;
+}
+.links h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.links h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.links{
+   position: relative;
+   width: 25%;
+}
+.links ul li{
+    list-style: none;
+}
+.links ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.links ul li a:hover{
+    color: #fff;
+}
+.contact h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.contact h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: #999;
+}
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}

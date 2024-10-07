@@ -1,0 +1,19 @@
+h1{
+    color: brown;
+    text-align: center;
+    font-size: 100px;
+   }
+
+#first-heading {
+    color: bisque;
+}
+#first-heading.second-heading {
+    color: blue;
+}
+
+.second-heading{
+    color: blueviolet;
+}
+li{
+    color: brown;
+}

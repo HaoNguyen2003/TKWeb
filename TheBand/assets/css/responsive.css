@@ -1,0 +1,63 @@
+@media (max-width: 739px){
+    #nav{
+        display: block;
+    }
+    .s-mt-8{
+        margin-top: 8px;
+    }
+    #nav .subnav{
+        position: initial;
+    }
+    #nav .subnav a {
+        padding: 0 21px;
+    }
+    #nav > li{
+        display: block;
+    }
+    #nav >li:first-child{
+        display: inline-block;
+    }
+    #header{
+        overflow: hidden;
+    }
+    #header .menu-btn{
+        display: block;
+    }
+    #header .search-button{
+        display: none;
+    }
+    .team{
+        display: initial !important;
+    }
+    .img-tinghow{
+        width: 60%;
+    }
+    .s-col-full,
+    .s-full-width{
+        width: 100% !important;
+    }
+    .contact-form{
+        margin-top: 32px;
+    }
+    .contact-info{
+        line-height: 2;
+    }
+}
+@media (min-width: 1024px){}
+@media (min-width: 740px) and (max-width: 1023px){
+    .btn{
+        padding: 18px 20px;
+    }
+    .form-control{
+        padding: 15px;
+    }
+    .social{
+        font-size: 48px;
+    }
+    #footer a{
+        padding: 10px;
+    }
+    .contact-info{
+        font-size: 24px;
+    }
+}

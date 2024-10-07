@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/admin.css">
+    <title>Admin</title>
+</head>
+<body>
+    <script src="main.js"></script>
+    <div id="main" class="main">
+        <div class="sliderbar">
+            <div class="detail-logo">
+                <img class="logo" src="assets/img/bacground.png" width="50px" height="auto" alt="1234">
+                <h3>TingHow</h3>
+            </div>
+            <ul class="navbar nav-menu">
+                <li><a href=""><i class="fa-solid fa-house"></i>Dashbroand</a></li>
+                <li><a href=""><i class="fa-solid fa-cube"></i>Product</a></li>
+                <li><a href=""><i class="fa-solid fa-users"></i>Users</a></li>
+                <li><a href=""><i class="fa-solid fa-truck"></i>Order</a></li>
+                <li><a href=""><i class="fa-solid fa-database"></i>Stock</a></li>
+                <li><a href=""><i class="fa-solid fa-chart-pie"></i>Statistic</a></li>
+                <li><a href=""><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
+            </ul>
+            <div class="social">
+                <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+
+        <div class="main-table">
+            <div class="table-product">
+                <section class="table_header">
+                    <h1>All Product of Store</h1>
+                    <form class="input-group" action="">
+                        <input type="search" placeholder="search" id="input-search">
+                        <button class="icon-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <div onclick="addproduct()" id="add-product" class="add-product">
+                        <i class="fa-solid fa-plus"></i>
+                        <p class="nameAdd">Add Product</p>
+                    </div>
+                </section>
+                <section class="table_body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>IDCustomer</th>
+                                <th>Name</th>
+                                <th>OrderDay</th>
+                                <th>Status</th>
+                                <th>Ipay</th>
+                                <th>total</th>
+                                <th>Compe</th>
+                                <th>Discount</th>
+                                <th>View</th>
+                                <th>Status</th>
+                                <th>Option</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fc4622c4-2769-4665-aa6e-42c974a7705e/air-force-1-07-shoes-WrLlWX.png" alt="">
+                                    Nike Air Force
+                                </td>
+                                <td>
+                                    Men's Shoes
+                                </td>
+                                <td>
+                                    Nike
+                                </td>
+                                <td>
+                                    Sneaker
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    <strong>100.00</strong>
+                                </td>
+                                <td>
+                                    <strong>90.00</strong>
+                                </td>
+                                <td>
+                                    10%
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    <p class="status delivered">Active</p>
+                                    
+                                </td>
+                                <td>
+                                   <a href=""  class="red "><i class="fa-solid fa-trash-can"></i></a>
+                                   <a onclick="updateproduct()" class="blue"><i class="fa-solid fa-pen-nib"></i></a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fc4622c4-2769-4665-aa6e-42c974a7705e/air-force-1-07-shoes-WrLlWX.png" alt="">
+                                    Nike Air Force
+                                </td>
+                                <td>
+                                    Men's Shoes
+                                </td>
+                                <td>
+                                    Nike
+                                </td>
+                                <td>
+                                    Sneaker
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    <strong>100.00</strong>
+                                </td>
+                                <td>
+                                    <strong>90.00</strong>
+                                </td>
+                                <td>
+                                    10%
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    <p class="status cancelled">Active</p>
+                                    
+                                </td>
+                                <td>
+                                   <a href="" class="red "><i class="fa-solid fa-trash-can"></i></a>
+                                   <a href="" class="blue"><i class="fa-solid fa-pen-nib"></i></a>
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fc4622c4-2769-4665-aa6e-42c974a7705e/air-force-1-07-shoes-WrLlWX.png" alt="">
+                                    Nike Air Force
+                                </td>
+                                <td>
+                                    Men's Shoes
+                                </td>
+                                <td>
+                                    Nike
+                                </td>
+                                <td>
+                                    Sneaker
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    <strong>100.00</strong>
+                                </td>
+                                <td>
+                                    <strong>90.00</strong>
+                                </td>
+                                <td>
+                                    10%
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    <p class="status">Active</p>
+                                    
+                                </td>
+                                <td>
+                                   <a href="" class="red "><i class="fa-solid fa-trash-can"></i></a>
+                                   <a href="" class="blue"><i class="fa-solid fa-pen-nib"></i></a>
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fc4622c4-2769-4665-aa6e-42c974a7705e/air-force-1-07-shoes-WrLlWX.png" alt="">
+                                    Nike Air Force
+                                </td>
+                                <td>
+                                    Men's Shoes
+                                </td>
+                                <td>
+                                    Nike
+                                </td>
+                                <td>
+                                    Sneaker
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    <strong>100.00</strong>
+                                </td>
+                                <td>
+                                    <strong>90.00</strong>
+                                </td>
+                                <td>
+                                    10%
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    <p class="status">Active</p>
+                                    
+                                </td>
+                                <td>
+                                   <a href="" class="red "><i class="fa-solid fa-trash-can"></i></a>
+                                   <a href="" class="blue"><i class="fa-solid fa-pen-nib"></i></a>
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fc4622c4-2769-4665-aa6e-42c974a7705e/air-force-1-07-shoes-WrLlWX.png" alt="">
+                                    Nike Air Force
+                                </td>
+                                <td>
+                                    Men's Shoes
+                                </td>
+                                <td>
+                                    Nike
+                                </td>
+                                <td>
+                                    Sneaker
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    <strong>100.00</strong>
+                                </td>
+                                <td>
+                                    <strong>90.00</strong>
+                                </td>
+                                <td>
+                                    10%
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    <p class="status">Active</p>
+                                    
+                                </td>
+                                <td>
+                                   <a href="" class="red "><i class="fa-solid fa-trash-can"></i></a>
+                                   <a href="" class="blue"><i class="fa-solid fa-pen-nib"></i></a>
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fc4622c4-2769-4665-aa6e-42c974a7705e/air-force-1-07-shoes-WrLlWX.png" alt="">
+                                    Nike Air Force
+                                </td>
+                                <td>
+                                    Men's Shoes
+                                </td>
+                                <td>
+                                    Nike
+                                </td>
+                                <td>
+                                    Sneaker
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    <strong>100.00</strong>
+                                </td>
+                                <td>
+                                    <strong>90.00</strong>
+                                </td>
+                                <td>
+                                    10%
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    <p class="status">Active</p>
+                                    
+                                </td>
+                                <td>
+                                   <a href="" class="red "><i class="fa-solid fa-trash-can"></i></a>
+                                   <a href="" class="blue"><i class="fa-solid fa-pen-nib"></i></a>
+                                </td>
+                            </tr>
+
+
+
+
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fc4622c4-2769-4665-aa6e-42c974a7705e/air-force-1-07-shoes-WrLlWX.png" alt="">
+                                    Nike Air Force
+                                </td>
+                                <td>
+                                    Men's Shoes
+                                </td>
+                                <td>
+                                    Nike
+                                </td>
+                                <td>
+                                    Sneaker
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    <strong>100.00</strong>
+                                </td>
+                                <td>
+                                    <strong>90.00</strong>
+                                </td>
+                                <td>
+                                    10%
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    <p class="status">Active</p>
+                                    
+                                </td>
+                                <td>
+                                   <a href="" class="red "><i class="fa-solid fa-trash-can"></i></a>
+                                   <a href="" class="blue"><i class="fa-solid fa-pen-nib"></i></a>
+                                </td>
+                            </tr>
+
+
+
+
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fc4622c4-2769-4665-aa6e-42c974a7705e/air-force-1-07-shoes-WrLlWX.png" alt="">
+                                    Nike Air Force
+                                </td>
+                                <td>
+                                    Men's Shoes
+                                </td>
+                                <td>
+                                    Nike
+                                </td>
+                                <td>
+                                    Sneaker
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    <strong>100.00</strong>
+                                </td>
+                                <td>
+                                    <strong>90.00</strong>
+                                </td>
+                                <td>
+                                    10%
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    <p class="status">Active</p>
+                                    
+                                </td>
+                                <td>
+                                   <a href="" class="red "><i class="fa-solid fa-trash-can"></i></a>
+                                   <a href="" class="blue"><i class="fa-solid fa-pen-nib"></i></a>
+                                </td>
+                            </tr>
+
+
+
+
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fc4622c4-2769-4665-aa6e-42c974a7705e/air-force-1-07-shoes-WrLlWX.png" alt="">
+                                    Nike Air Force
+                                </td>
+                                <td>
+                                    Men's Shoes
+                                </td>
+                                <td>
+                                    Nike
+                                </td>
+                                <td>
+                                    Sneaker
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    <strong>100.00</strong>
+                                </td>
+                                <td>
+                                    <strong>90.00</strong>
+                                </td>
+                                <td>
+                                    10%
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    <p class="status">Active</p>
+                                    
+                                </td>
+                                <td>
+                                   <a href="" class="red "><i class="fa-solid fa-trash-can"></i></a>
+                                   <a href="" class="blue"><i class="fa-solid fa-pen-nib"></i></a>
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fc4622c4-2769-4665-aa6e-42c974a7705e/air-force-1-07-shoes-WrLlWX.png" alt="">
+                                    Nike Air Force
+                                </td>
+                                <td>
+                                    Men's Shoes
+                                </td>
+                                <td>
+                                    Nike
+                                </td>
+                                <td>
+                                    Sneaker
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    <strong>100.00</strong>
+                                </td>
+                                <td>
+                                    <strong>90.00</strong>
+                                </td>
+                                <td>
+                                    10%
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    <p class="status">Active</p>
+                                    
+                                </td>
+                                <td>
+                                   <a href="" class="red "><i class="fa-solid fa-trash-can"></i></a>
+                                   <a href="" class="blue"><i class="fa-solid fa-pen-nib"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </div>
+        <div id="test">
+            <div id="addProductIntable" class="addProductIntable">
+                <div class="addProductIntable-header">
+                </div>
+                <form class="form-product" action="" method="post">
+                    <div class="input">
+                      <label for=""> Product Name:</label> <input name="nameproduct" type="text">
+                    </div>
+                    <div class="input">
+                        <label for="">Product title: </label><input name="producttitle" type="text">
+                    </div>
+                    <div class="input">
+                        <label for="">price In:</label> <input name="priceIn" type="number">
+                    </div>
+                    <div class="input">
+                        <label for="">Price Out:</label> <input name="priceOut" type="number">
+                    </div>
+                    <div class="category">
+                        <label for="Selector-Category">Category</label>
+                        <select name="Selector-Category" id="Selector-Category">
+                            <option value="1">Sneaker</option>
+                            <option value="2">Jacket</option>
+                            <option value="3">Pant</option>
+                            <option value="4">T-shirt</option>
+                        </select>
+                    </div>
+                    <div class="Brand">
+                        <label for="Selector-brand">brand</label>
+                        <select name="Selector-brand" id="Selector-brand">
+                            <option value="1">Sneaker</option>
+                            <option value="2">Jacket</option>
+                            <option value="3">Pant</option>
+                            <option value="4">T-shirt</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                      <label for="">  Main Image: </label><input type="text">
+                    </div>
+                    <div class="input">
+                       <label for=""> Image 1: </label><input type="text">
+                    </div>
+                    <div class="input">
+                        <label for="">Image 2: </label><input type="text">
+                    </div>
+                    <div class="input">
+                        <label for="">Image 3:</label> <input type="text">
+                    </div>
+                    <div class="input">
+                       <label for=""> Discription:</label> <textarea name="Discription" id="" cols="40" rows="6"></textarea>
+                    </div>
+                    <button class="create" type="submit">Create</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="test2">
+            <div id="addProductIntable" class="addProductIntable">
+                <div class="addProductIntable-header">
+                </div>
+                <form class="form-product" action="" method="post">
+                    <div class="input">
+                      <label for=""> Product Name:</label> <input name="nameproduct" type="text">
+                    </div>
+                    <div class="input">
+                        <label for="">Product title: </label><input name="producttitle" type="text">
+                    </div>
+                    <div class="input">
+                        <label for="">price In:</label> <input name="priceIn" type="number">
+                    </div>
+                    <div class="input">
+                        <label for="">Price Out:</label> <input name="priceOut" type="number">
+                    </div>
+                    <div class="category">
+                        <label for="Selector-Category">Category</label>
+                        <select name="Selector-Category" id="Selector-Category">
+                            <option value="1">Sneaker</option>
+                            <option value="2">Jacket</option>
+                            <option value="3">Pant</option>
+                            <option value="4">T-shirt</option>
+                        </select>
+                    </div>
+                    <div class="Brand">
+                        <label for="Selector-brand">brand</label>
+                        <select name="Selector-brand" id="Selector-brand">
+                            <option value="1">Sneaker</option>
+                            <option value="2">Jacket</option>
+                            <option value="3">Pant</option>
+                            <option value="4">T-shirt</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                      <label for="">  Main Image: </label><input type="text">
+                    </div>
+                    <div class="input">
+                       <label for=""> Image 1: </label><input type="text">
+                    </div>
+                    <div class="input">
+                        <label for="">Image 2: </label><input type="text">
+                    </div>
+                    <div class="input">
+                        <label for="">Image 3:</label> <input type="text">
+                    </div>
+                    <div class="input">
+                       <label for=""> Discription:</label> <textarea name="Discription" id="" cols="40" rows="6"></textarea>
+                    </div>
+                    <button class="create" type="submit">Create</button>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

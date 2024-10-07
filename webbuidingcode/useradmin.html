@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/admin.css">
+    <title>Admin</title>
+    <!-- animation: blink 3s infinite;-->
+    <style>
+    .statusAccount{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    animation: blink 3s infinite;
+    }
+    .activeAccount{
+    background-color:  #86e49d;
+    color: #066b21;
+    }
+    .inactiveAccount{
+    background-color:  #ff623d;
+    color: red;
+    }
+        @keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+    </style>
+
+</head>
+<body>
+    <script src="main.js"></script>
+    <div id="main" class="main">
+        <div class="sliderbar">
+            <div class="detail-logo">
+                <img class="logo" src="assets/img/bacground.png" width="50px" height="auto" alt="1234">
+                <h3>TingHow</h3>
+            </div>
+            <ul class="navbar nav-menu">
+                <li><a href=""><i class="fa-solid fa-house"></i>Dashbroand</a></li>
+                <li><a href=""><i class="fa-solid fa-cube"></i>Product</a></li>
+                <li><a href=""><i class="fa-solid fa-users"></i>Users</a></li>
+                <li><a href=""><i class="fa-solid fa-truck"></i>Order</a></li>
+                <li><a href=""><i class="fa-solid fa-database"></i>Stock</a></li>
+                <li><a href=""><i class="fa-solid fa-chart-pie"></i>Statistic</a></li>
+                <li><a href=""><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
+            </ul>
+            <div class="social">
+                <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+
+        <div class="main-table">
+            <div class="table-product">
+                <section class="table_header">
+                    <h1>All User of Store</h1>
+                    <form class="input-group" action="">
+                        <input type="search" placeholder="search" id="input-search">
+                        <button class="icon-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </section>
+                <section class="table_body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name Customer</th>
+                                <th>Username</th>
+                                <th>Password</th>
+                                <th>email</th>
+                                <th>numberphone</th>
+                                <th>Create Date</th>
+                                <th>Update Date</th>
+                                <th>Adress</th>
+                                <th>Status</th>
+                                <th>Order</th>
+                                <th>Option</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <img src="assets/img/user.png" alt="">
+                                    TingHow
+                                </td>
+                                <td>
+                                    Tinghow1234
+                                </td>
+                                <td>
+                                    1234
+                                </td>
+                                <td>
+                                    nguyentienhao12.3tpk@gmail.com
+                                </td>
+                                <td>
+                                    0878193742
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    Vietnam
+                                </td>
+                                <td>
+                                    <p class="statusAccount activeAccount">Active</p>
+                                </td>
+                                <td>
+                                    3
+                                </td>
+                                <td>
+                                   <a href=""  class="red "><i class="fa-solid fa-trash-can"></i></a>
+                                   <a href="" class="blue"><i class="fa-solid fa-pen"></i></a>
+                                   <button><i class="fa-solid fa-eye-low-vision"></i></button>
+                                   <button><i class="fa-solid fa-eye"></i></button>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <img src="../c:\Users\PC\Downloads\411427279_2127162090956378_6676837977875681055_n.jpg" alt="">
+                                    TingHow
+                                </td>
+                                <td>
+                                    Tinghow1234
+                                </td>
+                                <td>
+                                    1234
+                                </td>
+                                <td>
+                                    nguyentienhao12.3tpk@gmail.com
+                                </td>
+                                <td>
+                                    0878193742
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    2023-12-01 02:25:14.517
+                                </td>
+                                <td>
+                                    Vietnam
+                                </td>
+                                <td>
+                                    <p class="statusAccount inactiveAccount">Active</p>
+                                </td>
+                                <td>
+                                    3
+                                </td>
+                                <td>
+                                   <a href=""  class="red "><i class="fa-solid fa-trash-can"></i></a>
+                                   <a href="" class="blue"><i class="fa-solid fa-pen"></i></a>
+                                   <button><i class="fa-solid fa-eye-low-vision"></i></button>
+                                   <button><i class="fa-solid fa-eye"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </div>
+    </div>

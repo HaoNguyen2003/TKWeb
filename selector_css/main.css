@@ -1,0 +1,12 @@
+.title.heading{
+    color: red;
+}
+.box .title{
+    color: blue;
+}
+h2.title{
+    color:yellow;
+}
+.title+.title{
+    color: aqua;
+}
